@@ -26,9 +26,9 @@ tasks = [
 def get_tasks():
     return jsonify({'tasks': tasks})
 
-@application.route("/")
-def hello():
-    return "Hello World!_test"
+#@application.route("/")
+#def hello():
+#    return "Hello World!_test"
 
 if __name__ == "__main__":
     application.run()
