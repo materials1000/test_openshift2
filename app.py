@@ -12,7 +12,7 @@ app = flask.Flask(__name__)
 def predict():
     if flask.request.method == "POST":
         if flask.request.files.get("img"):
-           img = Image.open(io.BytesIO(flask.request.files["img"].read()))
+            img = Image.open(io.BytesIO(flask.request.files["img"].read()))
             transform_fn = transforms.Compose([
             transforms.Resize(32),
             transforms.CenterCrop(32),
